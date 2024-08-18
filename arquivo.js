@@ -1,23 +1,22 @@
-let xp = 8999
-let nivel;
-let heroi = "moraesxx"
+let vitorias = 50
+let derrotas = 1
+let patente;
 
-if (xp <= 1000){
-    nivel ="ferro"
-}else if(xp > 1001 && xp <= 2000){
-    nivel = "bronze"
-}else if (xp > 2001 && xp <=  5000){
-    nivel = "prata"
-}else if (xp > 6001 && xp <= 7000){
-    nivel = "ouro"
-}else if (xp > 7001 && xp <= 8000){
-    nivel = "platina"
-}else if (xp > 8001 && xp <= 9000){
-    nivel = "ascendente"
-}else if (xp > 9001 && xp <= 10000){
-    nivel = "imortal"
-}else (xp >= 10001)
-    nivel = "radiante"
+if (vitorias <= 10){
+    patente = "Patente ferro"
+}else if (vitorias >= 11 && vitorias <= 20){
+    patente = "bronze"
+}else if (vitorias >= 21 && vitorias <= 50){
+    patente = "prata"
+}else if (vitorias >= 51 && vitorias <= 80){
+    patente = "ouro"
+}else if (vitorias >= 81 && vitorias <= 90){
+    patente = "diamante"
+}else if (vitorias >= 91 && vitorias <= 100){
+    patente = "lendario"
+}else if(vitorias >= 101 ){
+    patente = "imortal"
+}
+    
 
-console.log(heroi + " esta no nivel " + nivel)
-
+console.log("o heroi tem " + (vitorias - derrotas) +  " vitorias e esta no nivel de "+ patente);
